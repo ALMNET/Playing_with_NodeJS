@@ -1,17 +1,21 @@
-// console.log(process);
-// console.log(process.env);
+const os = require('os');
 
-// [node, app.js, 6, 7]
-//    0      1    2  3
+// Muestra el sistema operativo en uso
+console.log(os.type()); // Output: Linux
 
-// Ejemplo
-// console.log(process.argv[2]);
-// console.log(process.argv[3]);
+// Directorio home
+console.log(os.homedir()); // Output: /home/armando
 
-let i;
+// Tiempo de ejecución del OS en segundos
+console.log(os.uptime()); // Output: /home/armando
 
-for (i = 2; i < process.argv.length; i++)
-{
-    console.log(process.argv[i]);
-}
-
+// Muestra info basica de usuario y ejecución
+console.log(os.userInfo());
+// Output:
+// {
+//     uid: 1000,
+//     gid: 1000,
+//     username: 'armando',
+//     homedir: '/home/armando',
+//     shell: '/bin/bash'
+// }
