@@ -1,8 +1,5 @@
-// Importacion parcial
-const { show_salute, saludarHolaMundo } = require('./saludos.js');
+console.log("Hola");
 
+console.warn("Puede que tengas un error");
 
-console.log(show_salute("Puto"));
-console.log(saludarHolaMundo());
-
-
+console.error(new Error("Tuviste un error"));
