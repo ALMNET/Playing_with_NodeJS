@@ -8,5 +8,7 @@ function saludarHolaMundo()
     return `Hola Mundo`;
 }
 
-module.exports.show_salute = show_salute;
-// module.exports.saluter = show_salute; // Tambien valido
+module.exports = {
+    show_salute: show_salute,
+    saludarHolaMundo: saludarHolaMundo
+};
